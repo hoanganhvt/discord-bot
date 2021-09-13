@@ -1,7 +1,5 @@
-let data = new Date()
-let day = data.getDate()
-let month = data.getMonth()
-
-let str = [day,month]
-str = str.join(' ')
-console.log(typeof str)
+const { wrap } = require('module')
+const vm = require('vm')
+a = ''
+vm.runInContext("console.log('hello world)",a)
+console.log(a)
